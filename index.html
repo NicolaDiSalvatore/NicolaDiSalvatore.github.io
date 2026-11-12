@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicola Di Salvatore · AI Engineer</title>
+  <meta name="description" content="Nicola Di Salvatore: AI Engineer building, deploying and evaluating AI systems. Data Scientist at Alten, MSc in Applied Mathematics (Politecnico di Torino).">
+  <meta property="og:title" content="Nicola Di Salvatore · AI Engineer">
+  <meta property="og:description" content="AI Engineer building, deploying and evaluating AI systems: agentic RAG, deep learning, MLOps.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232f5bea'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white'>ND</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a class="brand" href="#top">Nicola Di Salvatore</a>
+      <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow">AI Engineer</p>
+      <h1>Nicola Di Salvatore</h1>
+      <p class="lead">
+        AI Engineer focused on building, deploying, and evaluating AI systems that deliver measurable business value.
+        At Alten, I evaluated and fine-tuned foundation, deep learning, and tabular models for EV charging,
+        reducing false alarms by 46% and increasing recall by 14%. Independently, I built an agentic RAG system
+        with LangGraph and FastAPI, and a PyTorch-based music model with MLflow tracking and Docker deployment.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/NicolaDiSalvatore" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/nicola-di-salvatore/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="mailto:nicola.disalvatore@hotmail.com">Email</a>
+      </div>
+    </section>
+
+    <section id="experience" class="section wrap">
+      <h2>Experience</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>Data Scientist</h3>
+            <p class="org">Alten · Turin</p>
+          </div>
+          <span class="date">Jul 2025 – Present</span>
+        </div>
+        <ul>
+          <li>Developed and evaluated tabular, deep learning and foundation models (with context optimization and fine-tuning) to optimize electric vehicle charging time, reducing the false alarm rate by 46% and increasing recall by 14%.</li>
+          <li>Collaborated with research teams on synthetic data generation and validation.</li>
+          <li>Collaborated with managers and data scientists to align machine learning development with business objectives through visualizations, analysis and reports.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>Data Science Consultant and Intern</h3>
+            <p class="org">Carzooon Spa (e-commerce startup) · Turin</p>
+          </div>
+          <span class="date">Jul 2024 – Dec 2024</span>
+        </div>
+        <ul>
+          <li>Built pipelines using AWS to automate document classification and data extraction from unstructured data (IDs, pay slips, financial forms).</li>
+          <li>Designed unsupervised learning pipelines for customer segmentation, identifying 4 user types.</li>
+          <li>Collaborated with marketing, product and IT teams to align machine learning development with business goals.</li>
+          <li>Communicated results through visualizations and reports, supporting data-driven decisions.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects" class="section wrap">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3><a href="https://github.com/NicolaDiSalvatore/agentic-RAG-system" target="_blank" rel="noopener">Agentic RAG System</a></h3>
+          <p class="stack">LangChain · LlamaIndex · LangGraph · Qdrant · FastAPI</p>
+          <ul>
+            <li>Agentic RAG with rule-based adaptive routing, query decomposition, evidence-guided retrieval and citation-validated answer generation.</li>
+            <li>Hybrid retrieval over 36K+ chunks: Qdrant dense search, BM25 sparse retrieval and cross-encoder reranking. Top-1 hit rate of 59% and MRR of 0.65 across 300 labeled questions; RAGAS evaluation of faithfulness, answer relevancy, context precision and recall.</li>
+            <li>Fault-tolerant FastAPI backend with LLM fallback chains, circuit breakers, daily token budgets and extractive responses during LLM outages. Prometheus and Langfuse for monitoring and tracing.</li>
+          </ul>
+          <a class="repo" href="https://github.com/NicolaDiSalvatore/agentic-RAG-system" target="_blank" rel="noopener">View repository →</a>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/NicolaDiSalvatore/BachGen" target="_blank" rel="noopener">BachGen</a></h3>
+          <p class="stack">PyTorch · MusicTransformer · MLflow · Docker · Gradio · FastAPI</p>
+          <ul>
+            <li>MLOps pipeline for symbolic music generation, reproducing Google's MusicTransformer.</li>
+            <li>Tokenization and evaluation components for structured musical data (JSB Chorales).</li>
+            <li>Modular training and inference workflows with MLflow experiment tracking and Docker containerization.</li>
+            <li>Trained model served via a Gradio interface and FastAPI backend.</li>
+          </ul>
+          <a class="repo" href="https://github.com/NicolaDiSalvatore/BachGen" target="_blank" rel="noopener">View repository →</a>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/NicolaDiSalvatore/integrating-knowledge-graphs-with-logic-tensor-networks" target="_blank" rel="noopener">Knowledge Graphs + Logic Tensor Networks</a></h3>
+          <p class="stack">Master's thesis · Neuro-symbolic AI · Computer Vision · NLP</p>
+          <ul>
+            <li>Integrated the Visual Genome dataset with the ConceptNet knowledge graph using NLP techniques (tokenization, POS tagging, word embeddings) for semantic image interpretation.</li>
+            <li>Automatically generated seven types of first-order logic constraints from ConceptNet relationships and Numberbatch word embeddings.</li>
+          </ul>
+          <a class="repo" href="https://github.com/NicolaDiSalvatore/integrating-knowledge-graphs-with-logic-tensor-networks" target="_blank" rel="noopener">View repository →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section wrap">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <div><dt>ML &amp; AI</dt><dd><span>Machine Learning</span><span>Deep Learning</span><span>LLMs</span><span>RAG</span><span>Fine-Tuning</span><span>Time Series Forecasting</span></dd></div>
+        <div><dt>Programming &amp; Tools</dt><dd><span>Python</span><span>SQL</span><span>AWS</span><span>Airflow</span><span>DVC</span><span>Git</span></dd></div>
+        <div><dt>Libraries</dt><dd><span>PyTorch</span><span>Scikit-Learn</span><span>Pandas</span><span>FastAPI</span><span>MLflow</span><span>Docker</span><span>Prometheus</span><span>Langfuse</span><span>Gradio</span></dd></div>
+        <div><dt>Soft Skills</dt><dd><span>Adaptability</span><span>Collaboration</span><span>Communication</span><span>Problem-Solving</span></dd></div>
+        <div><dt>Languages</dt><dd><span>Italian (Native)</span><span>English (Professional)</span></dd></div>
+      </dl>
+    </section>
+
+    <section id="education" class="section wrap">
+      <h2>Education</h2>
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>MSc in Applied Mathematics</h3>
+            <p class="org">Politecnico di Torino</p>
+          </div>
+          <span class="date">Oct 2022 – Nov 2024</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <div>
+            <h3>BSc in Applied Mathematics</h3>
+            <p class="org">Politecnico di Torino</p>
+          </div>
+          <span class="date">Oct 2019 – Nov 2022</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact" class="section wrap contact">
+      <h2>Contact</h2>
+      <p>Open to AI and machine learning engineering opportunities. The fastest way to reach me is by email or LinkedIn.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:nicola.disalvatore@hotmail.com">nicola.disalvatore@hotmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/nicola-di-salvatore/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/NicolaDiSalvatore" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>© <span id="year">2026</span> Nicola Di Salvatore</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
